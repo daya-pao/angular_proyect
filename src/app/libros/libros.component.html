@@ -4,13 +4,13 @@
     <div class="input_busqueda">
         <input type="text" placeholder="Buscar libro" [(ngModel)]="Busqueda">
         <button (click)="onSearchClick()">Buscar</button>
-         <!--  @for(libro of libros; track $index){
-            <select [(ngModel)]=" Categoriaselecionada">
-              <option value="">Todas las categorías</option>
-              <option>{{ libro.categoria}}</option>
-            </select>
-            <button (click)="onSearchClick()">Buscar</button>
-          } -->
+        <select [(ngModel)]=" Categoriaselecionada">
+          @for(libro of libros; track $index){
+            <option value="">Todas las categorías</option>
+            <option>{{ libro.categoria}}</option>
+          }
+        </select>
+        <button (click)="onSearchClick()">Buscar</button>
     </div>
   </div>
   <div  class="libros_portada" >

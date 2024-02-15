@@ -10,7 +10,7 @@
     
 }
 .cuerpo_busqueda h2{
-    color: rgb(216, 216, 216);
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .input_busqueda{
@@ -29,15 +29,16 @@ select{
 }
 button{
     width: 6rem;
-    background-color:rgb(56, 55, 55) ;
+    background-color:rgb(85, 83, 83) ;
     border: 0;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
+    color: rgb(233, 228, 228);
 }
 button:hover{
     background-color: rgb(32, 46, 46);
-    color: white;
+    color: rgb(2, 2, 2);
 
 }
 .libros_portada{
@@ -60,5 +61,5 @@ button:hover{
 .info h3,p{
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(180, 179, 179);
+    color: rgb(255, 246, 246);
 }

@@ -2,6 +2,30 @@
   <div class="cuerpo_busqueda">
     <h2>Top de libros</h2>
     <div class="input_busqueda">
+        <input type="text" placeholder="Buscar libro">
+        <button>Buscar</button>
+    </div>
+  </div>
+  <div  class="libros_portada" >
+    @for (libro of libros ;track libros){
+      <div class="portada">
+        <div>
+          <img [src]="libro.volumeInfo.imageLinks.thumbnail" alt="Portada del libro" class="img">
+        </div>
+        <div class="info">
+          <p>Titulo:{{ libro.volumeInfo.title }}</p>
+          <!-- <p>Titulo:{{ libro.volumeInfo.title }}</p> -->
+          <!-- <p>Autor: {{ libro.volumeInfo.authors }}</p> -->
+        </div>
+      </div> 
+    }
+  </div>   
+</main>
+
+<!-- <main class="cuerpo">
+  <div class="cuerpo_busqueda">
+    <h2>Top de libros</h2>
+    <div class="input_busqueda">
         <input type="text" placeholder="Buscar libro" [(ngModel)]="Busqueda">
         <button (click)="onSearchClick()">Buscar</button>
         <select [(ngModel)]=" Categoriaselecionada">
@@ -13,6 +37,7 @@
         <button (click)="onSearchClick()">Buscar</button>
     </div>
   </div>
+  
   <div  class="libros_portada" >
    @for(libro of (librosFiltro.length > 0 ? librosFiltro : libros); track $index){
       <div class="portada">
@@ -26,6 +51,4 @@
       </div> 
     }
   </div>   
-</main>
-
-  
+</main>-->

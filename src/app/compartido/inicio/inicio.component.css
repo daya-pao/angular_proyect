@@ -1,0 +1,19 @@
+.container_principal{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+}
+.col-md-6{
+    width: 43vw;
+    border: 1px solid green;
+}
+.col-md-6 h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.img-fluid{
+    width: 30vw;
+}
+.book-image-container{
+   padding: 4rem;
+}

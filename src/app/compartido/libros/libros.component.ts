@@ -23,7 +23,7 @@ export class LibrosComponent implements OnInit{
   }
 
   fetchLibros() {
-    this.httpClient.get('https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=10&key=AIzaSyCYJ8IOND5esjZx-IlnV2YuhVRPfwyH0wg')
+    this.httpClient.get('https://www.googleapis.com/books/v1/volumes?q=subject:fiction&maxResults=30&key=AIzaSyCYJ8IOND5esjZx-IlnV2YuhVRPfwyH0wg')
       .subscribe((data: any) => {
         console.log(data);
         this.libros = data.items; 

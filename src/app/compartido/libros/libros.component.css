@@ -44,7 +44,47 @@ button:hover{
     color: rgb(2, 2, 2);
 
 }
-.libros_portada{
+.libros_portada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px; 
+}
+
+
+.portada {
+    display: inline-block;
+    border: 1px solid red;
+    text-align: center;
+    width: 18vw;
+    max-height: 298px; 
+    padding: 2rem;
+    margin-bottom: 3vw;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.img {
+    border-radius: 0.3rem;
+    height: auto;
+    max-height: 200px;
+    width: 11rem;
+}
+
+
+
+.info h3 {
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Cambia el color del texto según tus preferencias */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto si se recorta */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+
+/* .libros_portada{
     width: 98vw;
     margin: auto;
     column-count: 5;
@@ -67,4 +107,5 @@ button:hover{
 .info h3,p{
     font-weight: bold;
     color: rgb(218, 216, 216);
-}
+} */
+

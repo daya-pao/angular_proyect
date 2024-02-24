@@ -8,7 +8,7 @@ import { InicioComponent } from './compartido/inicio/inicio.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , HeaderComponent, FooterComponent,InicioComponent],
+  imports: [RouterOutlet , HeaderComponent, FooterComponent,InicioComponent,LibrosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -2,14 +2,28 @@
 <div class="container">
     <div class="container_principal">
       <div class="col-md-6">
-        <h2>Bienvenido a nuestra biblioteca virtual</h2>
+        <h2><span>Bienvenido</span> a nuestra <span>libreria</span> virtual</h2>
         <p>¡Explora nuestra colección de libros y encuentra tu próxima lectura!</p>
       </div>
       <div class="col-md-6">
         <div class="book-image-container">
-         
+         <img src="assets/img/librosf.webp" alt=""  id="book-image">
         </div>
       </div>
     </div>
 </div>
+<section class="libros-leidos " >
+  <div>
+    <h2>Libros mas leidos</h2>
+    <div class="libros-container">
+      @for (leidos of librosLeido; track $index) {
+        <div class="libro">
+          <h2>Titulo:{{leidos.titulo}}</h2>
+          <h2>Autor:{{leidos.Autor}}</h2>
+          <img src={{leidos.portada}} alt="">
+        </div>
+      }      
+    </div>
+  </div>
+</section>
 

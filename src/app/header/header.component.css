@@ -7,9 +7,6 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.navegacion{
-  border: 1px solid red;
-}
 .navegacion ul{
   display: flex;
   gap: 5rem;
@@ -18,6 +15,9 @@ header {
   justify-content: space-around;
   text-decoration: none;
   list-style: none;
-
+}
+.navegacion ul li a{
+  text-decoration: none;
+  color: white;
 }
 

@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { literalMap } from '@angular/compiler';
+import { FooterComponent } from '../../footer/footer.component';
 
 
 @Component({
   selector: 'app-libros',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule,FooterComponent],
   templateUrl: './libros.component.html',
   styleUrl: './libros.component.css'
 })

@@ -27,52 +27,59 @@
     animation: slideIn 1s ease forwards; 
 }
 @keyframes slideIn {
-    0% {
-        transform: translateY(-50px); 
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0); 
-        opacity: 1; 
-    }
+  0% {
+      transform: translateY(-50px); 
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0); 
+      opacity: 1; 
+  }
 }
 .libros-leidos {
-    padding: 20px;
-  }
-  
-  .libros-leidos h2 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-  
-  .libros-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7.8vw;
-  }
-  
-  .libro {
-    text-align: center;
-    width: 18vw;
-    padding: 1rem;
-    background-color: rgba(62, 63, 63, 0.445);
-    height: 54vh;
-    border-radius: 1rem;
+  padding: 20px;
 }
-  
-  .libro h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .libro h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .libro img {
-    width: 15vw;
-   height: 37vh;
-   border-radius: 1rem;
-  }
+
+.libros-leidos h2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.libros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7.8vw;
+  margin-top: 50px;
+}
+.titulo .h2{
+  text-align: center;
+  font-size: 4rem;
+  color: rgba(248, 75, 12, 0.74);
+}
+.libro {
+  text-align: center;
+  width: 18vw;
+  padding: 1rem;
+  background-color: rgba(62, 63, 63, 0.445);
+  height: 54vh;
+  border-radius: 1rem;
+
+}
+.libro h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.libro h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.libro img {
+  width: 15vw;
+ height: 37vh;
+ border-radius: 1rem;
+}
   

@@ -1,0 +1,23 @@
+<section  class="section_novedades">
+    <div class="novedad_contenido">
+        <h4>libros  proximo a salir</h4>
+        <div class="libros_novedad">
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+        </div>
+    </div>
+    <div class="novedad_testimonio">
+        <h4>Testimonio de nuestros lectores </h4>
+        <div class="testimonio">
+            @for(testimonio of Testimonio ; track $index){
+                <div class="testimonio_persona">
+                    <h3>{{testimonio.nombre}}</h3>
+                    <p>{{testimonio.testimonio}}</p>
+                </div>
+            }
+        </div>
+    </div>
+    <app-footer></app-footer>
+</section>

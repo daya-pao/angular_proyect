@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterComponent } from '../../footer/footer.component';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
@@ -19,11 +20,9 @@ export class InicioComponent implements OnInit {
 
   public librosLeido = [
     {titulo:'Maldito Selfi', Autor:'Lorenzo Silva',portada:'assets/img/maldito-selfi.jpg'},
-    {titulo:'Alquimista', Autor:'',portada:'assets/img/alquimista.webp'},
-    {titulo:'24 besos', Autor:'Lorenzo Silva',portada:'assets/img/portada_24-besos.jpg'},
-    {titulo:'Odisea', Autor:'Lorenzo Silva',portada:'assets/img/odisea.jpg'}
+    {titulo:'Alquimista', Autor:'Paulo Coelho',portada:'assets/img/alquimista.webp'},
+    {titulo:'24 besos', Autor:'Caroline March',portada:'assets/img/portada_24-besos.jpg'},
+    {titulo:'Odisea', Autor:'Homero',portada:'assets/img/odisea.jpg'}
   ]
-
-  
 
 }

@@ -21,34 +21,4 @@
     }
   </div>   
 </main>
-
-<!-- <main class="cuerpo">
-  <div class="cuerpo_busqueda">
-    <h2>Top de libros</h2>
-    <div class="input_busqueda">
-        <input type="text" placeholder="Buscar libro" [(ngModel)]="Busqueda">
-        <button (click)="onSearchClick()">Buscar</button>
-        <select [(ngModel)]=" Categoriaselecionada">
-          @for(libro of libros; track $index){
-            <option value="">Todas las categorías</option>
-            <option>{{ libro.categoria}}</option>
-          }
-        </select>
-        <button (click)="onSearchClick()">Buscar</button>
-    </div>
-  </div>
-  
-  <div  class="libros_portada" >
-   @for(libro of (librosFiltro.length > 0 ? librosFiltro : libros); track $index){
-      <div class="portada">
-        <div>
-          <img [src]="libro.portada" alt="{{libro.portada}}" class = "img">
-        </div>
-        <div class="info">
-          <h3>{{ libro.titulo }}</h3>
-          <p>{{ libro.autor }}</p>
-        </div>
-      </div> 
-    }
-  </div>   
-</main>-->
+<app-footer></app-footer>
